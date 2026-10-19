@@ -189,60 +189,145 @@ export default function App() {
     }
   ];
 
-  const recommendations = [
+  // TODAS AS RECOMENDAÇÕES PROFISSIONAIS SEPARADAS POR NÍVEL HIERÁRQUICO
+  const recommendationsHierarchy = [
     {
-      name: "Fernando Arbache",
-      title: "Professor e Consultor de Inovação no MIT",
-      company: "MIT Professional Education",
-      text: "Recomendo Aislan para o programa de CTO do MIT. Graduado com honras em Transformação Digital no MIT e integrante do Knowledge Hub (grupo seleto de 50 profissionais globais). Destaca-se por sua visão estratégica, paixão pela transformação digital e liderança exemplar em projetos financeiros complexos."
+      level: "Direção, C-Level, Mentores & Professores Internacionais",
+      desc: "Recomendações de lideranças executivas seniores e corpo docente internacional.",
+      items: [
+        {
+          name: "Fernando Arbache",
+          title: "Professor e Consultor de Inovação no MIT",
+          company: "MIT Professional Education",
+          text: "Recomendo Aislan para o programa de CTO do MIT[cite: 10]. Graduado com honras em Transformação Digital no MIT e integrante do Knowledge Hub (grupo seleto de 50 profissionais globais). Destaca-se por sua visão estratégica, paixão pela transformação digital e liderança exemplar em projetos financeiros complexos[cite: 10]."
+        },
+        {
+          name: "Ana G Soares",
+          title: "Professora e Mentora do LACP",
+          company: "Lean Agile Coach Professional",
+          text: "As habilidades que mais te destacam são determinação com foco, proatividade e comunicação com carisma[cite: 10]. É o TOP 1 no nosso ranking catalogado de sucesso profissional[cite: 10]!"
+        },
+        {
+          name: "Ricardo Auad Galozzi",
+          title: "Superintendente de Gestão Corporativa",
+          company: "LPM / Banco ABC Brasil",
+          text: "Proatividade e envolvimento ímpares, além de fortes conhecimentos em agilidade e ótimo relacionamento interpessoal[cite: 7]. Identificou necessidade de capacitar o time de negócio e mobilizou os esforços necessários com enorme utilidade para a organização[cite: 7]."
+        },
+        {
+          name: "Roberta Larisse Borges",
+          title: "Head de Agilidade",
+          company: "Banco ABC Brasil",
+          text: "Capacidade de aprendizado e aplicação escalada[cite: 7]. Forte senso de time e companheirismo, criando ótimos ambientes de trabalho[cite: 7]. Ótimo comunicador[cite: 7]. A liderança está de fato em seu DNA[cite: 7]."
+        }
+      ]
     },
     {
-      name: "Ana G Soares",
-      title: "Professora e Mentora do LACP",
-      company: "Lean Agile Coach Professional",
-      text: "As habilidades que mais te destacam são determinação com foco, proatividade e comunicação com carisma. É o TOP 1 no nosso ranking catalogado de sucesso profissional!"
+      level: "Gerência, PMO & Governança Corporativa",
+      desc: "Depoimentos de gerentes e superintendentes de portfólios, riscos e governança.",
+      items: [
+        {
+          name: "Bruno Domingos Medeiros",
+          title: "Gerente de Governança de T.I",
+          company: "Banco ABC Brasil",
+          text: "O feedback que chega do C-Level é que você é muito focado em resultados, não deixa assuntos pendentes e tenta sempre envolver as pessoas para a obtenção do melhor desfecho possível[cite: 7]."
+        },
+        {
+          name: "Camila Siebra dos Santos",
+          title: "Gerente de Gestão Corporativa LPM",
+          company: "Banco ABC Brasil",
+          text: "Profissional extremamente comprometido com suas tarefas e entregáveis, engajado em atingir sempre o melhor resultado[cite: 8]. Tem habilidade para questionar de forma coerente processos e decisões, propondo novas maneiras de fazer, pensar e inovar[cite: 8]."
+        },
+        {
+          name: "Marcelo Nobrega",
+          title: "Gerente de Passivos e Tesouro Direto",
+          company: "Banco ABC Brasil",
+          text: "Implantamos Sistemas para Distribuição de Fundos com muita eficácia[cite: 8]. O Espírito de equipe e Pertencimento é algo bastante forte e presente nesse profissional[cite: 8]! Sempre pronto para auxiliar as áreas envolvidas nos projetos inclusive os Vendors."
+        },
+        {
+          name: "Camila Ribeiro",
+          title: "Governança de T.I & VMO",
+          company: "Banco ABC Brasil",
+          text: "Em uma visão geral do nosso dia a dia vejo o quanto você é dedicado e determinado[cite: 8]. Está sempre estudando, buscando evoluir e dar o seu melhor[cite: 8]. Se posiciona com maestria, independente do desafio[cite: 8]."
+        },
+        {
+          name: "Roselaine Guimaraes Galdino",
+          title: "Release Train Engineer (RTE)",
+          company: "Ex-Banco ABC Brasil / Atual Bradesco",
+          text: "Profissional altamente colaborativo, que tem em seu perfil o hábito de contribuir de forma totalmente voluntária[cite: 9]. Constrói bons controles de eficiência de times para tomadas de decisão baseadas em dados[cite: 9]."
+        },
+        {
+          name: "Tatiane Vilas Boas",
+          title: "Gerente de Controle de Derivativos",
+          company: "Banco ABC Brasil",
+          text: "Sempre que o rumo de reuniões complexas com fornecedores começa a se perder, você consegue pausar as discussões com respeito e trazer todos para o foco principal e focado em resultado[cite: 10]."
+        },
+        {
+          name: "Gustavo Marrero",
+          title: "Gestão OPEX - Governança de TI",
+          company: "Ex-Banco ABC Brasil / Atual Shopee",
+          text: "Bastante seguro de si, exterioriza com precisão o que cada pessoa deve fazer para se atingir suas metas[cite: 9]. Demonstra ser um profissional totalmente qualificado, com nível de senioridade bastante elevado[cite: 9]."
+        }
+      ]
     },
     {
-      name: "Ricardo Auad Galozzi",
-      title: "Superintendente de Gestão Corporativa",
-      company: "LPM / Banco ABC Brasil",
-      text: "Proatividade e envolvimento ímpares, além de fortes conhecimentos em agilidade e ótimo relacionamento interpessoal. Identificou necessidade de capacitar o time de negócio e mobilizou os esforços necessários com enorme utilidade para a organização."
-    },
-    {
-      name: "Roberta Larisse Borges",
-      title: "Head de Agilidade",
-      company: "Banco ABC Brasil",
-      text: "Capacidade de aprendizado e aplicação escalada. Forte senso de time e companheirismo, criando ótimos ambientes de trabalho. Ótimo comunicador. A liderança está de fato em seu DNA."
-    },
-    {
-      name: "Fabiano Lanzillotta",
-      title: "Arquiteto Salesforce CRM",
-      company: "Salesforce",
-      text: "Aislan é um líder nato. Atuando em crédito e CRM, soube administrar conflitos internos e lidar com a cobrança do C-Level sem transpor a pressão aos desenvolvedores, motivando todos a atender os prazos com harmonia."
-    },
-    {
-      name: "Rafael Furlan",
-      title: "Gerente de T.I Core Banking",
-      company: "Banco ABC Brasil",
-      text: "Destaca-se pela persuasão, negociação e pragmatismo. Consegue sintetizar informações e transmitir mensagens claras para diferentes públicos (C-Level a analistas). Atua perfeitamente como um 'mediador estratégico' que promove fluidez e minimiza atritos."
-    },
-    {
-      name: "Bruno Domingos Medeiros",
-      title: "Gerente de Governança de T.I",
-      company: "Banco ABC Brasil",
-      text: "O feedback que chega do C-Level é que você é muito focado em resultados, não deixa assuntos pendentes e tenta sempre envolver as pessoas para a obtenção do melhor desfecho possível."
-    },
-    {
-      name: "Luiz Antonio Mendes de Gois Junior",
-      title: "Coordenador de Segurança da Informação",
-      company: "Banco ABC Brasil",
-      text: "Senso de urgência impecável em demandas complexas. No projeto de gestão de identidades, entrou em cenário super desgastado, organizou rapidamente e afastou a crise com o fornecedor, garantindo as entregas críticas."
-    },
-    {
-      name: "Pamela Coelho do Nascimento",
-      title: "Analista Sr. de Projetos e Sistemas",
-      company: "Banco ABC Brasil",
-      text: "Mediador e pacificador excepcional. Durante a maratona de 13h de war room do SBS V5, manteve-se calmo e centrado diante de momentos tensos, instaurando um clima leve e focado na solução."
+      level: "Pares, Tech Leads & Especialistas Técnicos",
+      desc: "Reconhecimento de arquitetos, líderes técnicos, analistas seniores e parceiros de squad.",
+      items: [
+        {
+          name: "Fabiano Lanzillotta",
+          title: "Arquiteto Salesforce CRM",
+          company: "Salesforce",
+          text: "Aislan é um líder nato[cite: 7]. Soube administrar conflitos internos e lidar com a cobrança do C-Level sem transpor a pressão aos desenvolvedores, motivando todos a atender os prazos com harmonia[cite: 7]."
+        },
+        {
+          name: "Rafael Furlan",
+          title: "Gerente de T.I Core Banking",
+          company: "Banco ABC Brasil",
+          text: "Destaca-se pela persuasão, negociação e pragmatismo[cite: 7]. Atua perfeitamente como um 'mediador estratégico' que promove fluidez e minimiza atritos nos processos[cite: 7]."
+        },
+        {
+          name: "Santhiago Merks",
+          title: "Coordenador de Risco de Crédito",
+          company: "Banco ABC Brasil",
+          text: "Sempre disponível, atua com honestidade e transparência[cite: 7]. Consegue ser claro e objetivo na comunicação, sempre buscando conciliação e foco na resolução dos problemas[cite: 7]."
+        },
+        {
+          name: "Luiz Antonio Mendes de Gois Junior",
+          title: "Coordenador de Segurança da Informação",
+          company: "Banco ABC Brasil",
+          text: "Senso de urgência impecável em demandas complexas[cite: 7]. No projeto de gestão de identidades, entrou em cenário super desgastado e rapidamente afastou a crise com o fornecedor[cite: 7]."
+        },
+        {
+          name: "Devilim Peterson",
+          title: "Tech Lead Core Banking",
+          company: "Ex-ABC Brasil / Atual ASA Banking",
+          text: "Conseguiu de forma sucinta e objetiva orientar correções sutis nos processos de agilidade, fazendo o time aderir rapidamente[cite: 8]. Demonstra forte espírito de liderança e organização impecável[cite: 8]."
+        },
+        {
+          name: "Eduardo Xavier",
+          title: "Tech Lead Core Banking",
+          company: "Banco ABC Brasil",
+          text: "Organização nas pautas e cumprimento de entregas[cite: 8]. Excelente gestão de conflitos, conseguindo mapear e adequar prioridades quando uma tarefa afeta múltiplas áreas[cite: 8]."
+        },
+        {
+          name: "Pamela Coelho do Nascimento",
+          title: "Analista Sr. de Projetos e Sistemas",
+          company: "Banco ABC Brasil",
+          text: "Mediador e pacificador excepcional[cite: 9]. Durante uma maratona de 13h de war room do SBS V5, manteve-se calmo, centrado e instaurou um clima leve focado na solução[cite: 9]."
+        },
+        {
+          name: "Rodrigo Croci",
+          title: "Tech Lead Core Banking",
+          company: "Banco ABC Brasil",
+          text: "Um profissional muito responsável, facilitador dedicado e prestativo, sabe conduzir os projetos com maestria e manter o time engajado do início ao fim[cite: 9]."
+        },
+        {
+          name: "Lucas dal Rovere",
+          title: "Governança de T.I",
+          company: "Ex-Banco ABC Brasil / Atual Bradesco",
+          text: "Destaco sua notável empatia e clareza na comunicação com stakeholders[cite: 9]. Sua resiliência e determinação diante de desafios têm sido verdadeiramente inspiradoras[cite: 9]."
+        }
+      ]
     }
   ];
 
@@ -253,7 +338,7 @@ export default function App() {
       <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[160px] pointer-events-none"></div>
       <div className="absolute bottom-10 left-1/3 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[180px] pointer-events-none"></div>
 
-      {/* Header Liquid Glass com Backdrop Blur Avançado */}
+      {/* Header Liquid Glass */}
       <header className="sticky top-0 z-50 bg-[#05070B]/70 backdrop-blur-2xl border-b border-white/10 shadow-xl shadow-black/40">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center space-x-3 group cursor-pointer">
@@ -279,7 +364,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* Hero Section Premium */}
+      {/* Hero Section */}
       <section className="relative pt-28 pb-20 overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
           <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-2xl text-cyan-400 text-xs font-medium tracking-wide uppercase mb-8 shadow-inner hover:border-cyan-500/40 transition-colors">
@@ -294,7 +379,6 @@ export default function App() {
             Executivo de tecnologia com sólida experiência em liderança estratégica, expansão de mercado e transformação digital guiada por inovação e IA.
           </p>
           
-          {/* Botões de Ação com Link Live Integrado */}
           <div className="flex flex-wrap justify-center gap-4">
             <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:opacity-90 transition-all shadow-lg shadow-cyan-500/25 flex items-center space-x-2 text-sm backdrop-blur-md">
               <LinkedinIcon />
@@ -310,7 +394,7 @@ export default function App() {
 
       {/* Conteúdo Dinâmico */}
       <main className="py-16 relative z-10">
-        {/* ABA SOBRE COM BIO OTIMIZADA */}
+        {/* ABA SOBRE */}
         {activeTab === 'sobre' && (
           <div className="max-w-5xl mx-auto px-6 space-y-20">
             <div className="p-8 sm:p-12 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-3xl shadow-2xl relative overflow-hidden group hover:border-cyan-500/30 transition-all">
@@ -328,7 +412,6 @@ export default function App() {
                 </p>
               </div>
 
-              {/* Destaque do Link Oficial na Bio */}
               <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <span className="text-xs text-slate-400 font-mono">🔗 URL Oficial Publicada:</span>
                 <a href="https://portfolio-carrer-git-main-aislan-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs text-cyan-400 hover:underline font-mono bg-cyan-500/10 px-4 py-2 rounded-xl border border-cyan-500/20">
@@ -441,36 +524,45 @@ export default function App() {
           </div>
         )}
 
-        {/* ABA RECOMENDAÇÕES */}
+        {/* ABA RECOMENDAÇÕES ORGANIZADAS POR NÍVEL HIERÁRQUICO */}
         {activeTab === 'recomendacoes' && (
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="text-center max-w-2xl mx-auto mb-16">
+          <div className="max-w-6xl mx-auto px-6 space-y-20">
+            <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Recomendações Profissionais</h2>
-              <p className="text-slate-400 text-sm">Depoimentos corporativos de líderes, C-Levels e professores do MIT.</p>
+              <p className="text-slate-400 text-sm">Depoimentos corporativos rigorosamente estruturados por nível hierárquico, cobrindo lideranças executivas, gerências e especialistas técnicos.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {recommendations.map((rec, idx) => (
-                <div key={idx} className="p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/40 transition-all flex flex-col justify-between group">
-                  <div>
-                    <QuoteIcon />
-                    <p className="text-sm text-slate-300 italic leading-relaxed mb-6 font-normal">
-                      "{rec.text}"
-                    </p>
-                  </div>
-                  <div className="border-t border-white/10 pt-4">
-                    <h4 className="font-bold text-white text-sm group-hover:text-cyan-400 transition-colors">{rec.name}</h4>
-                    <p className="text-[11px] text-cyan-400 font-medium">{rec.title}</p>
-                    <p className="text-[10px] text-slate-500">{rec.company}</p>
-                  </div>
+            {recommendationsHierarchy.map((group, gIdx) => (
+              <div key={gIdx} className="space-y-6">
+                <div className="border-b border-white/10 pb-4">
+                  <h3 className="text-xl font-bold text-cyan-400 tracking-tight">{group.level}</h3>
+                  <p className="text-xs text-slate-400 mt-1">{group.desc}</p>
                 </div>
-              ))}
-            </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {group.items.map((rec, idx) => (
+                    <div key={idx} className="p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/40 transition-all flex flex-col justify-between group">
+                      <div>
+                        <QuoteIcon />
+                        <p className="text-sm text-slate-300 italic leading-relaxed mb-6 font-normal">
+                          "{rec.text}"
+                        </p>
+                      </div>
+                      <div className="border-t border-white/10 pt-4">
+                        <h4 className="font-bold text-white text-sm group-hover:text-cyan-400 transition-colors">{rec.name}</h4>
+                        <p className="text-[11px] text-cyan-400 font-medium">{rec.title}</p>
+                        <p className="text-[10px] text-slate-500">{rec.company}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         )}
       </main>
 
-      {/* Footer Liquid Glass com Link Integrado */}
+      {/* Footer Liquid Glass */}
       <footer className="py-16 border-t border-white/10 bg-[#05070B]/80 backdrop-blur-2xl text-center relative z-10">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-white mb-3">Vamos conectar?</h2>
