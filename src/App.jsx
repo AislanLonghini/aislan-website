@@ -1,19 +1,24 @@
 import React, { useState } from 'react';
 
-// SVGs Inline Minimalistas de Alta Fidelidade (Padrão Apple UX)
+// SVGs Minimalistas de Alta Fidelidade
 const LinkedinIcon = () => (
-  <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
     <rect x="2" y="9" width="4" height="12" />
     <circle cx="4" cy="4" r="2" />
   </svg>
 );
 
-const GlobeIcon = () => (
-  <svg className="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <line x1="2" y1="12" x2="22" y2="12" />
-    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+const MailIcon = () => (
+  <svg className="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+    <polyline points="22,6 12,13 2,6" />
+  </svg>
+);
+
+const WhatsappIcon = () => (
+  <svg className="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
   </svg>
 );
 
@@ -189,7 +194,6 @@ export default function App() {
     }
   ];
 
-  // TODAS AS RECOMENDAÇÕES PROFISSIONAIS SEPARADAS POR NÍVEL HIERÁRQUICO
   const recommendationsHierarchy = [
     {
       level: "Direção, C-Level, Mentores & Professores Internacionais",
@@ -332,46 +336,59 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#05070B] text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 relative overflow-hidden">
-      {/* Background Ambience / Glowing Liquid Effects */}
-      <div className="absolute top-[-10%] left-1/4 w-[700px] h-[700px] bg-cyan-500/10 rounded-full blur-[160px] pointer-events-none animate-pulse"></div>
-      <div className="absolute top-1/3 right-1/4 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[160px] pointer-events-none"></div>
-      <div className="absolute bottom-10 left-1/3 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[180px] pointer-events-none"></div>
+    <div className="min-h-screen bg-[#080B11] text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 relative overflow-hidden">
+      {/* Dynamic Background Gradients inspirado no Hover.dev / The Startup */}
+      <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-cyan-500/15 via-blue-600/10 to-transparent rounded-full blur-[140px] pointer-events-none"></div>
+      <div className="absolute top-1/2 left-[-10%] w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[160px] pointer-events-none"></div>
 
-      {/* Header Liquid Glass */}
-      <header className="sticky top-0 z-50 bg-[#05070B]/70 backdrop-blur-2xl border-b border-white/10 shadow-xl shadow-black/40">
+      {/* Header Estilo Hover.dev / The Startup */}
+      <header className="sticky top-0 z-50 bg-[#080B11]/80 backdrop-blur-md border-b border-white/10 shadow-2xl">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex items-center space-x-3 group cursor-pointer">
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-cyan-400/20 via-blue-500/20 to-indigo-500/20 border border-white/20 backdrop-blur-md flex items-center justify-center font-extrabold text-cyan-400 text-sm tracking-tight shadow-inner group-hover:scale-105 transition-transform">
-              AL
+          <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => setActiveTab('sobre')}>
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+              <div className="w-full h-full bg-[#080B11] rounded-[11px] flex items-center justify-center font-extrabold text-cyan-400 text-xs tracking-wider">
+                AL
+              </div>
             </div>
             <div>
               <span className="font-bold text-sm tracking-tight block text-white group-hover:text-cyan-400 transition-colors">Aislan Longhini</span>
-              <span className="text-[10px] text-cyan-400/80 font-mono tracking-widest uppercase">IT Executive & Delivery</span>
+              <span className="text-[10px] text-slate-400 font-mono uppercase tracking-widest">IT Executive</span>
             </div>
           </div>
 
-          <nav className="flex items-center space-x-1 sm:space-x-2 text-xs sm:text-sm font-medium">
-            {['sobre', 'competencias', 'timeline', 'certificacoes', 'recomendacoes'].map((tab) => (
+          <nav className="flex items-center space-x-1 sm:space-x-1.5 text-xs font-semibold">
+            {[
+              { id: 'sobre', label: 'Sobre' },
+              { id: 'competencias', label: 'Competências' },
+              { id: 'timeline', label: 'Timeline' },
+              { id: 'certificacoes', label: 'Certificações' },
+              { id: 'recomendacoes', label: 'Recomendações' },
+              { id: 'contato', label: 'Contato' }
+            ].map((tab) => (
               <button 
-                key={tab}
-                onClick={() => setActiveTab(tab)} 
-                className={`px-4 py-2 rounded-xl transition-all capitalize ${activeTab === tab ? 'text-white bg-white/10 border border-white/20 backdrop-blur-md shadow-lg shadow-cyan-500/5' : 'text-slate-400 hover:text-white hover:bg-white/5'}`}>
-                {tab === 'certificacoes' ? 'Certificações' : tab === 'recomendacoes' ? 'Recomendações' : tab}
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)} 
+                className={`px-3.5 py-2 rounded-xl transition-all duration-200 relative ${
+                  activeTab === tab.id 
+                    ? 'text-white bg-white/10 border border-white/20 shadow-md shadow-cyan-500/10' 
+                    : 'text-slate-400 hover:text-white hover:bg-white/5'
+                }`}>
+                {tab.label}
               </button>
             ))}
           </nav>
         </div>
       </header>
 
-      {/* Hero Section */}
-      <section className="relative pt-28 pb-20 overflow-hidden">
+      {/* Hero Section Hover.dev - The Startup Style */}
+      <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
-          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/[0.03] border border-white/10 backdrop-blur-2xl text-cyan-400 text-xs font-medium tracking-wide uppercase mb-8 shadow-inner hover:border-cyan-500/40 transition-colors">
+          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-cyan-400 text-xs font-mono tracking-wide uppercase mb-8 backdrop-blur-xl">
             <CpuIcon />
             <span>MIT Certified • Business & Tech Integration • SAFe 6.0 RTE</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+          <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 leading-[1.15]">
             Conectando visão de negócios <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">à tecnologia e dados.</span>
           </h1>
@@ -380,25 +397,24 @@ export default function App() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:opacity-90 transition-all shadow-lg shadow-cyan-500/25 flex items-center space-x-2 text-sm backdrop-blur-md">
+            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition-all shadow-xl shadow-cyan-500/20 flex items-center space-x-2 text-sm">
               <LinkedinIcon />
               <span className="text-slate-950">Perfil LinkedIn</span>
             </a>
-            <a href="https://portfolio-carrer-git-main-aislan-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-cyan-400 font-semibold hover:bg-white/[0.1] transition-all text-sm backdrop-blur-xl shadow-lg flex items-center space-x-2">
-              <GlobeIcon />
-              <span>Aceder ao Portfólio Live</span>
-            </a>
+            <button onClick={() => setActiveTab('contato')} className="px-8 py-4 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] hover:border-white/20 transition-all text-sm backdrop-blur-xl">
+              Falar Conosco
+            </button>
           </div>
         </div>
       </section>
 
       {/* Conteúdo Dinâmico */}
-      <main className="py-16 relative z-10">
+      <main className="py-12 relative z-10">
         {/* ABA SOBRE */}
         {activeTab === 'sobre' && (
-          <div className="max-w-5xl mx-auto px-6 space-y-20">
-            <div className="p-8 sm:p-12 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-3xl shadow-2xl relative overflow-hidden group hover:border-cyan-500/30 transition-all">
-              <div className="absolute -right-20 -top-20 w-60 h-60 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div className="max-w-5xl mx-auto px-6 space-y-16">
+            <div className="p-8 sm:p-12 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-2xl relative overflow-hidden hover:border-cyan-500/30 transition-all">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-6">Resumo Executivo</h2>
               <div className="space-y-4 text-slate-300 leading-relaxed text-base sm:text-lg">
                 <p>
@@ -411,22 +427,15 @@ export default function App() {
                   Minha atuação combina visão estratégica nexialista, orientação a resultados e capacidade de conectar pessoas, processos e tecnologia para gerar valor sustentável e impulsionar a transformação digital das organizações.
                 </p>
               </div>
-
-              <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-                <span className="text-xs text-slate-400 font-mono">🔗 URL Oficial Publicada:</span>
-                <a href="https://portfolio-carrer-git-main-aislan-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs text-cyan-400 hover:underline font-mono bg-cyan-500/10 px-4 py-2 rounded-xl border border-cyan-500/20">
-                  https://portfolio-carrer-git-main-aislan-portfolio.vercel.app/
-                </a>
-              </div>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold tracking-tight text-white mb-8 text-center">Principais Conquistas</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {mainAchievements.map((item, idx) => (
-                  <div key={idx} className="p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl hover:border-cyan-500/40 transition-all shadow-xl flex flex-col justify-between group">
+                  <div key={idx} className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl hover:border-cyan-500/30 transition-all shadow-xl flex flex-col justify-between group">
                     <div>
-                      <div className="w-10 h-10 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+                      <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                         <CheckCircleIcon />
                       </div>
                       <h4 className="font-bold text-white text-base mb-2">{item.title}</h4>
@@ -449,18 +458,16 @@ export default function App() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {skillCategories.map((cat, idx) => (
-                <div key={idx} className="p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-xl flex flex-col justify-between hover:border-cyan-500/40 transition-all">
-                  <div>
-                    <h3 className="text-lg font-bold text-white mb-6 pb-3 border-b border-white/10">{cat.title}</h3>
-                    <ul className="space-y-3.5">
-                      {cat.skills.map((skill, sIdx) => (
-                        <li key={sIdx} className="text-sm text-slate-300 flex items-start space-x-3">
-                          <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0 shadow-[0_0_10px_rgba(34,211,238,0.9)]"></span>
-                          <span>{skill}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div key={idx} className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/30 transition-all">
+                  <h3 className="text-lg font-bold text-white mb-6 pb-3 border-b border-white/10">{cat.title}</h3>
+                  <ul className="space-y-3.5">
+                    {cat.skills.map((skill, sIdx) => (
+                      <li key={sIdx} className="text-sm text-slate-300 flex items-start space-x-3">
+                        <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0 shadow-[0_0_8px_rgba(34,211,238,0.8)]"></span>
+                        <span>{skill}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
@@ -478,11 +485,11 @@ export default function App() {
             <div className="relative border-l border-white/10 ml-4 md:ml-32 space-y-12">
               {careerTimeline.map((item, index) => (
                 <div key={index} className="relative pl-8 md:pl-12 group">
-                  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-cyan-400 ring-4 ring-[#05070B] shadow-[0_0_12px_rgba(34,211,238,0.9)] group-hover:scale-125 transition-transform"></div>
+                  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-cyan-400 ring-4 ring-[#080B11] shadow-[0_0_10px_rgba(34,211,238,0.8)] group-hover:scale-125 transition-transform"></div>
                   <div className="md:absolute md:-left-32 md:top-1 text-xs font-mono text-cyan-400 font-semibold mb-1 md:mb-0">
                     {item.period}
                   </div>
-                  <div className="p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/40 transition-all">
+                  <div className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/30 transition-all">
                     <h3 className="text-lg font-bold text-white mb-1">{item.role}</h3>
                     <p className="text-xs font-medium text-cyan-300/80 mb-3">{item.company}</p>
                     <p className="text-sm text-slate-300 leading-relaxed">{item.description}</p>
@@ -502,34 +509,32 @@ export default function App() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {certifications.map((group, idx) => (
-                <div key={idx} className="p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-xl flex flex-col justify-between hover:border-cyan-500/40 transition-all">
-                  <div>
-                    <div className="w-10 h-10 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-6">
-                      <GraduationCapIcon />
-                    </div>
-                    <h3 className="text-base font-bold text-white mb-1">{group.category}</h3>
-                    <p className="text-xs text-cyan-400 font-medium mb-6">{group.institution}</p>
-                    <ul className="space-y-3">
-                      {group.items.map((item, i) => (
-                        <li key={i} className="text-xs text-slate-300 leading-relaxed flex items-start space-x-2">
-                          <span className="text-cyan-400 font-bold">•</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                <div key={idx} className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/30 transition-all">
+                  <div className="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-6">
+                    <GraduationCapIcon />
                   </div>
+                  <h3 className="text-base font-bold text-white mb-1">{group.category}</h3>
+                  <p className="text-xs text-cyan-400 font-medium mb-6">{group.institution}</p>
+                  <ul className="space-y-3">
+                    {group.items.map((item, i) => (
+                      <li key={i} className="text-xs text-slate-300 leading-relaxed flex items-start space-x-2">
+                        <span className="text-cyan-400 font-bold">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
             </div>
           </div>
         )}
 
-        {/* ABA RECOMENDAÇÕES ORGANIZADAS POR NÍVEL HIERÁRQUICO */}
+        {/* ABA RECOMENDAÇÕES */}
         {activeTab === 'recomendacoes' && (
-          <div className="max-w-6xl mx-auto px-6 space-y-20">
+          <div className="max-w-6xl mx-auto px-6 space-y-16">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Recomendações Profissionais</h2>
-              <p className="text-slate-400 text-sm">Depoimentos corporativos rigorosamente estruturados por nível hierárquico, cobrindo lideranças executivas, gerências e especialistas técnicos.</p>
+              <p className="text-slate-400 text-sm">Depoimentos corporativos rigorosamente estruturados por nível hierárquico.</p>
             </div>
 
             {recommendationsHierarchy.map((group, gIdx) => (
@@ -541,7 +546,7 @@ export default function App() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {group.items.map((rec, idx) => (
-                    <div key={idx} className="p-8 rounded-3xl bg-white/[0.03] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/40 transition-all flex flex-col justify-between group">
+                    <div key={idx} className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-xl hover:border-cyan-500/30 transition-all flex flex-col justify-between group">
                       <div>
                         <QuoteIcon />
                         <p className="text-sm text-slate-300 italic leading-relaxed mb-6 font-normal">
@@ -560,24 +565,71 @@ export default function App() {
             ))}
           </div>
         )}
+
+        {/* NOVA ABA DE CONTATO */}
+        {activeTab === 'contato' && (
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Canais de Contato Direto</h2>
+              <p className="text-slate-400 text-sm">Entre em contato diretamente para parcerias, posições executivas ou consultoria estratégica.</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* E-mail Card */}
+              <a 
+                href="mailto:aislanlonghini30@gmail.com" 
+                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-500/40 backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <MailIcon />
+                  </div>
+                  <h3 className="text-xs uppercase font-mono tracking-widest text-cyan-400 mb-1">E-mail Profissional</h3>
+                  <p className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors">aislanlonghini30@gmail.com</p>
+                </div>
+                <p className="text-xs text-slate-400 mt-6 flex items-center space-x-1">
+                  <span>Clique para enviar e-mail</span>
+                  <span>→</span>
+                </p>
+              </a>
+
+              {/* WhatsApp Card */}
+              <a 
+                href="https://wa.me/5511959251055" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-emerald-500/40 backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <WhatsappIcon />
+                  </div>
+                  <h3 className="text-xs uppercase font-mono tracking-widest text-emerald-400 mb-1">WhatsApp Direct</h3>
+                  <p className="text-lg font-bold text-white group-hover:text-emerald-300 transition-colors">(11) 95925-1055</p>
+                </div>
+                <p className="text-xs text-slate-400 mt-6 flex items-center space-x-1">
+                  <span>Iniciar conversa no WhatsApp</span>
+                  <span>→</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        )}
       </main>
 
-      {/* Footer Liquid Glass */}
-      <footer className="py-16 border-t border-white/10 bg-[#05070B]/80 backdrop-blur-2xl text-center relative z-10">
+      {/* Footer Estilo Hover.dev */}
+      <footer className="py-16 border-t border-white/10 bg-[#080B11]/90 backdrop-blur-xl text-center relative z-10">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-2xl font-bold text-white mb-3">Vamos conectar?</h2>
           <p className="text-slate-400 text-sm mb-8 max-w-md mx-auto">
             Disponível para novos desafios executivos em Delivery Management, Inovação e Integração entre Negócios e Tecnologia.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:opacity-90 transition-colors text-sm shadow-lg shadow-cyan-500/20">
+            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition-all text-sm shadow-lg shadow-cyan-500/20 flex items-center space-x-2">
               <LinkedinIcon />
-              <span className="text-slate-950">Perfil Oficial no LinkedIn</span>
+              <span className="text-slate-950">Perfil LinkedIn</span>
             </a>
-            <a href="https://portfolio-carrer-git-main-aislan-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center space-x-2 px-7 py-3.5 rounded-2xl bg-white/[0.05] border border-white/15 text-cyan-400 font-semibold hover:bg-white/[0.1] transition-all text-sm backdrop-blur-xl">
-              <GlobeIcon />
-              <span>Aceder ao Portfólio Live</span>
-            </a>
+            <button onClick={() => setActiveTab('contato')} className="px-7 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] transition-all text-sm backdrop-blur-xl">
+              Ver Contatos
+            </button>
           </div>
           <p className="mt-12 text-xs text-slate-500">© {new Date().getFullYear()} Aislan Longhini. Todos os direitos reservados.</p>
         </div>
@@ -585,3 +637,4 @@ export default function App() {
     </div>
   );
 }
+
