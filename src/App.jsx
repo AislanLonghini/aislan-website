@@ -357,7 +357,7 @@ export default function App() {
             </div>
           </div>
 
-          <nav className="flex items-center space-x-1 sm:space-x-1.5 text-xs font-semibold">
+          <nav role="tablist" aria-label="Seções do portfólio" className="flex items-center space-x-1 sm:space-x-1.5 text-xs font-semibold">
             {[
               { id: 'sobre', label: 'Sobre' },
               { id: 'competencias', label: 'Competências' },
@@ -365,11 +365,37 @@ export default function App() {
               { id: 'certificacoes', label: 'Certificações' },
               { id: 'recomendacoes', label: 'Recomendações' },
               { id: 'contato', label: 'Contato' }
-            ].map((tab) => (
+            ].map((tab, idx, allTabs) => (
               <button 
                 key={tab.id}
+                id={`tab-${tab.id}`}
+                role="tab"
+                aria-selected={activeTab === tab.id}
+                aria-controls={`panel-${tab.id}`}
+                tabIndex={activeTab === tab.id ? 0 : -1}
+                onKeyDown={(e) => {
+                  let targetIdx = idx;
+                  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    targetIdx = (idx + 1) % allTabs.length;
+                  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    targetIdx = (idx - 1 + allTabs.length) % allTabs.length;
+                  } else if (e.key === 'Home') {
+                    e.preventDefault();
+                    targetIdx = 0;
+                  } else if (e.key === 'End') {
+                    e.preventDefault();
+                    targetIdx = allTabs.length - 1;
+                  } else {
+                    return;
+                  }
+                  setActiveTab(allTabs[targetIdx].id);
+                  const nextTab = document.getElementById(`tab-${allTabs[targetIdx].id}`);
+                  if (nextTab) nextTab.focus();
+                }}
                 onClick={() => setActiveTab(tab.id)} 
-                className={`px-3.5 py-2 rounded-xl transition-all duration-200 relative ${
+                className={`px-3.5 py-2 rounded-xl transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] ${
                   activeTab === tab.id 
                     ? 'text-white bg-white/10 border border-white/20 shadow-md shadow-cyan-500/10' 
                     : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -397,11 +423,11 @@ export default function App() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition-all shadow-xl shadow-cyan-500/20 flex items-center space-x-2 text-sm">
+            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all shadow-xl shadow-cyan-500/20 flex items-center space-x-2 text-sm">
               <LinkedinIcon />
               <span className="text-slate-950">Perfil LinkedIn</span>
             </a>
-            <button onClick={() => setActiveTab('contato')} className="px-8 py-4 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] hover:border-white/20 transition-all text-sm backdrop-blur-xl">
+            <button onClick={() => setActiveTab('contato')} className="px-8 py-4 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all text-sm backdrop-blur-xl">
               Falar Conosco
             </button>
           </div>
@@ -412,7 +438,7 @@ export default function App() {
       <main className="py-12 relative z-10">
         {/* ABA SOBRE */}
         {activeTab === 'sobre' && (
-          <div className="max-w-5xl mx-auto px-6 space-y-16">
+          <div id="panel-sobre" role="tabpanel" aria-labelledby="tab-sobre" tabIndex={0} className="max-w-5xl mx-auto px-6 space-y-16 focus-visible:outline-none">
             <div className="p-8 sm:p-12 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-2xl relative overflow-hidden hover:border-cyan-500/30 transition-all">
               <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-6">Resumo Executivo</h2>
@@ -450,7 +476,7 @@ export default function App() {
 
         {/* ABA COMPETÊNCIAS */}
         {activeTab === 'competencias' && (
-          <div className="max-w-5xl mx-auto px-6">
+          <div id="panel-competencias" role="tabpanel" aria-labelledby="tab-competencias" tabIndex={0} className="max-w-5xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Competências & Expertise</h2>
               <p className="text-slate-400 text-sm">Domínios organizados para máxima clareza e impacto estratégico.</p>
@@ -476,7 +502,7 @@ export default function App() {
 
         {/* ABA TIMELINE */}
         {activeTab === 'timeline' && (
-          <div className="max-w-4xl mx-auto px-6">
+          <div id="panel-timeline" role="tabpanel" aria-labelledby="tab-timeline" tabIndex={0} className="max-w-4xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Linha do Tempo</h2>
               <p className="text-slate-400 text-sm">Transição fluida entre a liderança comercial e a gestão executiva de tecnologia.</p>
@@ -502,7 +528,7 @@ export default function App() {
 
         {/* ABA CERTIFICAÇÕES */}
         {activeTab === 'certificacoes' && (
-          <div className="max-w-5xl mx-auto px-6">
+          <div id="panel-certificacoes" role="tabpanel" aria-labelledby="tab-certificacoes" tabIndex={0} className="max-w-5xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Certificações & Educação</h2>
               <p className="text-slate-400 text-sm">Credenciais obtidas nas principais instituições mundiais.</p>
@@ -531,7 +557,7 @@ export default function App() {
 
         {/* ABA RECOMENDAÇÕES */}
         {activeTab === 'recomendacoes' && (
-          <div className="max-w-6xl mx-auto px-6 space-y-16">
+          <div id="panel-recomendacoes" role="tabpanel" aria-labelledby="tab-recomendacoes" tabIndex={0} className="max-w-6xl mx-auto px-6 space-y-16 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Recomendações Profissionais</h2>
               <p className="text-slate-400 text-sm">Depoimentos corporativos rigorosamente estruturados por nível hierárquico.</p>
@@ -568,7 +594,7 @@ export default function App() {
 
         {/* NOVA ABA DE CONTATO */}
         {activeTab === 'contato' && (
-          <div className="max-w-4xl mx-auto px-6">
+          <div id="panel-contato" role="tabpanel" aria-labelledby="tab-contato" tabIndex={0} className="max-w-4xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Canais de Contato Direto</h2>
               <p className="text-slate-400 text-sm">Entre em contato diretamente para parcerias, posições executivas ou consultoria estratégica.</p>
@@ -578,7 +604,7 @@ export default function App() {
               {/* E-mail Card */}
               <a 
                 href="mailto:aislanlonghini30@gmail.com" 
-                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-500/40 backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
+                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <MailIcon />
@@ -597,7 +623,7 @@ export default function App() {
                 href="https://wa.me/5511959251055" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-emerald-500/40 backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
+                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-emerald-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <WhatsappIcon />
@@ -623,11 +649,11 @@ export default function App() {
             Disponível para novos desafios executivos em Delivery Management, Inovação e Integração entre Negócios e Tecnologia.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition-all text-sm shadow-lg shadow-cyan-500/20 flex items-center space-x-2">
+            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all text-sm shadow-lg shadow-cyan-500/20 flex items-center space-x-2">
               <LinkedinIcon />
               <span className="text-slate-950">Perfil LinkedIn</span>
             </a>
-            <button onClick={() => setActiveTab('contato')} className="px-7 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] transition-all text-sm backdrop-blur-xl">
+            <button onClick={() => setActiveTab('contato')} className="px-7 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all text-sm backdrop-blur-xl">
               Ver Contatos
             </button>
           </div>
