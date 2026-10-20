@@ -203,25 +203,25 @@ export default function App() {
           name: "Fernando Arbache",
           title: "Professor e Consultor de Inovação no MIT",
           company: "MIT Professional Education",
-          text: "Recomendo Aislan para o programa de CTO do MIT[cite: 10]. Graduado com honras em Transformação Digital no MIT e integrante do Knowledge Hub (grupo seleto de 50 profissionais globais). Destaca-se por sua visão estratégica, paixão pela transformação digital e liderança exemplar em projetos financeiros complexos[cite: 10]."
+          text: "Recomendo Aislan para o programa de CTO do MIT. Graduado com honras em Transformação Digital no MIT e integrante do Knowledge Hub (grupo seleto de 50 profissionais globais). Destaca-se por sua visão estratégica, paixão pela transformação digital e liderança exemplar em projetos financeiros complexos."
         },
         {
           name: "Ana G Soares",
           title: "Professora e Mentora do LACP",
           company: "Lean Agile Coach Professional",
-          text: "As habilidades que mais te destacam são determinação com foco, proatividade e comunicação com carisma[cite: 10]. É o TOP 1 no nosso ranking catalogado de sucesso profissional[cite: 10]!"
+          text: "As habilidades que mais te destacam são determinação com foco, proatividade e comunicação com carisma. É o TOP 1 no nosso ranking catalogado de sucesso profissional!"
         },
         {
           name: "Ricardo Auad Galozzi",
           title: "Superintendente de Gestão Corporativa",
           company: "LPM / Banco ABC Brasil",
-          text: "Proatividade e envolvimento ímpares, além de fortes conhecimentos em agilidade e ótimo relacionamento interpessoal[cite: 7]. Identificou necessidade de capacitar o time de negócio e mobilizou os esforços necessários com enorme utilidade para a organização[cite: 7]."
+          text: "Proatividade e envolvimento ímpares, além de fortes conhecimentos em agilidade e ótimo relacionamento interpessoal. Identificou necessidade de capacitar o time de negócio e mobilizou os esforços necessários com enorme utilidade para a organização."
         },
         {
           name: "Roberta Larisse Borges",
           title: "Head de Agilidade",
           company: "Banco ABC Brasil",
-          text: "Capacidade de aprendizado e aplicação escalada[cite: 7]. Forte senso de time e companheirismo, criando ótimos ambientes de trabalho[cite: 7]. Ótimo comunicador[cite: 7]. A liderança está de fato em seu DNA[cite: 7]."
+          text: "Capacidade de aprendizado e aplicação escalada. Forte senso de time e companheirismo, criando ótimos ambientes de trabalho. Ótimo comunicador. A liderança está de fato em seu DNA."
         }
       ]
     },
@@ -233,43 +233,43 @@ export default function App() {
           name: "Bruno Domingos Medeiros",
           title: "Gerente de Governança de T.I",
           company: "Banco ABC Brasil",
-          text: "O feedback que chega do C-Level é que você é muito focado em resultados, não deixa assuntos pendentes e tenta sempre envolver as pessoas para a obtenção do melhor desfecho possível[cite: 7]."
+          text: "O feedback que chega do C-Level é que você é muito focado em resultados, não deixa assuntos pendentes e tenta sempre envolver as pessoas para a obtenção do melhor desfecho possível."
         },
         {
           name: "Camila Siebra dos Santos",
           title: "Gerente de Gestão Corporativa LPM",
           company: "Banco ABC Brasil",
-          text: "Profissional extremamente comprometido com suas tarefas e entregáveis, engajado em atingir sempre o melhor resultado[cite: 8]. Tem habilidade para questionar de forma coerente processos e decisões, propondo novas maneiras de fazer, pensar e inovar[cite: 8]."
+          text: "Profissional extremamente comprometido com suas tarefas e entregáveis, engajado em atingir sempre o melhor resultado. Tem habilidade para questionar de forma coerente processos e decisões, propondo novas maneiras de fazer, pensar e inovar."
         },
         {
           name: "Marcelo Nobrega",
           title: "Gerente de Passivos e Tesouro Direto",
           company: "Banco ABC Brasil",
-          text: "Implantamos Sistemas para Distribuição de Fundos com muita eficácia[cite: 8]. O Espírito de equipe e Pertencimento é algo bastante forte e presente nesse profissional[cite: 8]! Sempre pronto para auxiliar as áreas envolvidas nos projetos inclusive os Vendors."
+          text: "Implantamos Sistemas para Distribuição de Fundos com muita eficácia. O Espírito de equipe e Pertencimento é algo bastante forte e presente nesse profissional! Sempre pronto para auxiliar as áreas envolvidas nos projetos inclusive os Vendors."
         },
         {
           name: "Camila Ribeiro",
           title: "Governança de T.I & VMO",
           company: "Banco ABC Brasil",
-          text: "Em uma visão geral do nosso dia a dia vejo o quanto você é dedicado e determinado[cite: 8]. Está sempre estudando, buscando evoluir e dar o seu melhor[cite: 8]. Se posiciona com maestria, independente do desafio[cite: 8]."
+          text: "Em uma visão geral do nosso dia a dia vejo o quanto você é dedicado e determinado. Está sempre estudando, buscando evoluir e dar o seu melhor. Se posiciona com maestria, independente do desafio."
         },
         {
           name: "Roselaine Guimaraes Galdino",
           title: "Release Train Engineer (RTE)",
           company: "Ex-Banco ABC Brasil / Atual Bradesco",
-          text: "Profissional altamente colaborativo, que tem em seu perfil o hábito de contribuir de forma totalmente voluntária[cite: 9]. Constrói bons controles de eficiência de times para tomadas de decisão baseadas em dados[cite: 9]."
+          text: "Profissional altamente colaborativo, que tem em seu perfil o hábito de contribuir de forma totalmente voluntária. Constrói bons controles de eficiência de times para tomadas de decisão baseadas em dados."
         },
         {
           name: "Tatiane Vilas Boas",
           title: "Gerente de Controle de Derivativos",
           company: "Banco ABC Brasil",
-          text: "Sempre que o rumo de reuniões complexas com fornecedores começa a se perder, você consegue pausar as discussões com respeito e trazer todos para o foco principal e focado em resultado[cite: 10]."
+          text: "Sempre que o rumo de reuniões complexas com fornecedores começa a se perder, você consegue pausar as discussões com respeito e trazer todos para o foco principal e focado em resultado."
         },
         {
           name: "Gustavo Marrero",
           title: "Gestão OPEX - Governança de TI",
           company: "Ex-Banco ABC Brasil / Atual Shopee",
-          text: "Bastante seguro de si, exterioriza com precisão o que cada pessoa deve fazer para se atingir suas metas[cite: 9]. Demonstra ser um profissional totalmente qualificado, com nível de senioridade bastante elevado[cite: 9]."
+          text: "Bastante seguro de si, exterioriza com precisão o que cada pessoa deve fazer para se atingir suas metas. Demonstra ser um profissional totalmente qualificado, com nível de senioridade bastante elevado."
         }
       ]
     },
@@ -281,55 +281,55 @@ export default function App() {
           name: "Fabiano Lanzillotta",
           title: "Arquiteto Salesforce CRM",
           company: "Salesforce",
-          text: "Aislan é um líder nato[cite: 7]. Soube administrar conflitos internos e lidar com a cobrança do C-Level sem transpor a pressão aos desenvolvedores, motivando todos a atender os prazos com harmonia[cite: 7]."
+          text: "Aislan é um líder nato. Soube administrar conflitos internos e lidar com a cobrança do C-Level sem transpor a pressão aos desenvolvedores, motivando todos a atender os prazos com harmonia."
         },
         {
           name: "Rafael Furlan",
           title: "Gerente de T.I Core Banking",
           company: "Banco ABC Brasil",
-          text: "Destaca-se pela persuasão, negociação e pragmatismo[cite: 7]. Atua perfeitamente como um 'mediador estratégico' que promove fluidez e minimiza atritos nos processos[cite: 7]."
+          text: "Destaca-se pela persuasão, negociação e pragmatismo. Atua perfeitamente como um 'mediador estratégico' que promove fluidez e minimiza atritos nos processos."
         },
         {
           name: "Santhiago Merks",
           title: "Coordenador de Risco de Crédito",
           company: "Banco ABC Brasil",
-          text: "Sempre disponível, atua com honestidade e transparência[cite: 7]. Consegue ser claro e objetivo na comunicação, sempre buscando conciliação e foco na resolução dos problemas[cite: 7]."
+          text: "Sempre disponível, atua com honestidade e transparência. Consegue ser claro e objetivo na comunicação, sempre buscando conciliação e foco na resolução dos problemas."
         },
         {
           name: "Luiz Antonio Mendes de Gois Junior",
           title: "Coordenador de Segurança da Informação",
           company: "Banco ABC Brasil",
-          text: "Senso de urgência impecável em demandas complexas[cite: 7]. No projeto de gestão de identidades, entrou em cenário super desgastado e rapidamente afastou a crise com o fornecedor[cite: 7]."
+          text: "Senso de urgência impecável em demandas complexas. No projeto de gestão de identidades, entrou em cenário super desgastado e rapidamente afastou a crise com o fornecedor."
         },
         {
           name: "Devilim Peterson",
           title: "Tech Lead Core Banking",
           company: "Ex-ABC Brasil / Atual ASA Banking",
-          text: "Conseguiu de forma sucinta e objetiva orientar correções sutis nos processos de agilidade, fazendo o time aderir rapidamente[cite: 8]. Demonstra forte espírito de liderança e organização impecável[cite: 8]."
+          text: "Conseguiu de forma sucinta e objetiva orientar correções sutis nos processos de agilidade, fazendo o time aderir rapidamente. Demonstra forte espírito de liderança e organização impecável."
         },
         {
           name: "Eduardo Xavier",
           title: "Tech Lead Core Banking",
           company: "Banco ABC Brasil",
-          text: "Organização nas pautas e cumprimento de entregas[cite: 8]. Excelente gestão de conflitos, conseguindo mapear e adequar prioridades quando uma tarefa afeta múltiplas áreas[cite: 8]."
+          text: "Organização nas pautas e cumprimento de entregas. Excelente gestão de conflitos, conseguindo mapear e adequar prioridades quando uma tarefa afeta múltiplas áreas."
         },
         {
           name: "Pamela Coelho do Nascimento",
           title: "Analista Sr. de Projetos e Sistemas",
           company: "Banco ABC Brasil",
-          text: "Mediador e pacificador excepcional[cite: 9]. Durante uma maratona de 13h de war room do SBS V5, manteve-se calmo, centrado e instaurou um clima leve focado na solução[cite: 9]."
+          text: "Mediador e pacificador excepcional. Durante uma maratona de 13h de war room do SBS V5, manteve-se calmo, centrado e instaurou um clima leve focado na solução."
         },
         {
           name: "Rodrigo Croci",
           title: "Tech Lead Core Banking",
           company: "Banco ABC Brasil",
-          text: "Um profissional muito responsável, facilitador dedicado e prestativo, sabe conduzir os projetos com maestria e manter o time engajado do início ao fim[cite: 9]."
+          text: "Um profissional muito responsável, facilitador dedicado e prestativo, sabe conduzir os projetos com maestria e manter o time engajado do início ao fim."
         },
         {
           name: "Lucas dal Rovere",
           title: "Governança de T.I",
           company: "Ex-Banco ABC Brasil / Atual Bradesco",
-          text: "Destaco sua notável empatia e clareza na comunicação com stakeholders[cite: 9]. Sua resiliência e determinação diante de desafios têm sido verdadeiramente inspiradoras[cite: 9]."
+          text: "Destaco sua notável empatia e clareza na comunicação com stakeholders. Sua resiliência e determinação diante de desafios têm sido verdadeiramente inspiradoras."
         }
       ]
     }
