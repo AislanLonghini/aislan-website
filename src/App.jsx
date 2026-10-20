@@ -336,7 +336,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#080B11] text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 relative overflow-hidden">
+    <div className="min-h-screen bg-[#080B11] text-white font-sans selection:bg-cyan-500 selection:text-cyan-950 relative overflow-hidden">
       {/* Dynamic Background Gradients inspirado no Hover.dev / The Startup */}
       <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-cyan-500/15 via-blue-600/10 to-transparent rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute top-1/2 left-[-10%] w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[150px] pointer-events-none"></div>
@@ -353,7 +353,7 @@ export default function App() {
             </div>
             <div>
               <span className="font-bold text-sm tracking-tight block text-white group-hover:text-cyan-400 transition-colors">Aislan Longhini</span>
-              <span className="text-[10px] text-slate-400 font-mono uppercase tracking-widest">IT Executive</span>
+              <span className="text-xs text-slate-400 font-mono uppercase tracking-widest">IT Executive</span>
             </div>
           </div>
 
@@ -390,7 +390,7 @@ export default function App() {
           </div>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 leading-[1.15]">
             Conectando visão de negócios <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">à tecnologia e dados.</span>
+            <span className="text-cyan-400">à tecnologia e dados.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10 font-normal">
             Executivo de tecnologia com sólida experiência em liderança estratégica, expansão de mercado e transformação digital guiada por inovação e IA.
@@ -555,8 +555,8 @@ export default function App() {
                       </div>
                       <div className="border-t border-white/10 pt-4">
                         <h4 className="font-bold text-white text-sm group-hover:text-cyan-400 transition-colors">{rec.name}</h4>
-                        <p className="text-[11px] text-cyan-400 font-medium">{rec.title}</p>
-                        <p className="text-[10px] text-slate-500">{rec.company}</p>
+                        <p className="text-xs text-cyan-400 font-medium">{rec.title}</p>
+                        <p className="text-xs text-slate-400">{rec.company}</p>
                       </div>
                     </div>
                   ))}
