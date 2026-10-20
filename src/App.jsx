@@ -336,18 +336,18 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#080B11] text-white font-sans selection:bg-cyan-500 selection:text-cyan-950 relative overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-cyan-500 selection:text-cyan-950 relative overflow-hidden">
       {/* Dynamic Background Gradients inspirado no Hover.dev / The Startup */}
       <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-cyan-500/15 via-blue-600/10 to-transparent rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute top-1/2 left-[-10%] w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[150px] pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[160px] pointer-events-none"></div>
 
       {/* Header Estilo Hover.dev / The Startup */}
-      <header className="sticky top-0 z-50 bg-[#080B11]/80 backdrop-blur-md border-b border-white/10 shadow-2xl">
+      <header className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10 shadow-2xl">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => setActiveTab('sobre')}>
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
-              <div className="w-full h-full bg-[#080B11] rounded-[11px] flex items-center justify-center font-extrabold text-cyan-400 text-xs tracking-wider">
+              <div className="w-full h-full bg-[#0a0a0a] rounded-[11px] flex items-center justify-center font-extrabold text-cyan-400 text-xs tracking-wider">
                 AL
               </div>
             </div>
@@ -395,7 +395,7 @@ export default function App() {
                   if (nextTab) nextTab.focus();
                 }}
                 onClick={() => setActiveTab(tab.id)} 
-                className={`px-3.5 py-2 rounded-xl transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] ${
+                className={`px-3.5 py-2 rounded-xl transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] ${
                   activeTab === tab.id 
                     ? 'text-white bg-white/10 border border-white/20 shadow-md shadow-cyan-500/10' 
                     : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -423,11 +423,11 @@ export default function App() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all shadow-xl shadow-cyan-500/20 flex items-center space-x-2 text-sm">
+            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] transition-all shadow-xl shadow-cyan-500/20 flex items-center space-x-2 text-sm">
               <LinkedinIcon />
               <span className="text-slate-950">Perfil LinkedIn</span>
             </a>
-            <button onClick={() => setActiveTab('contato')} className="px-8 py-4 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all text-sm backdrop-blur-xl">
+            <button onClick={() => setActiveTab('contato')} className="px-8 py-4 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] transition-all text-sm backdrop-blur-xl">
               Falar Conosco
             </button>
           </div>
@@ -511,7 +511,7 @@ export default function App() {
             <div className="relative border-l border-white/10 ml-4 md:ml-32 space-y-12">
               {careerTimeline.map((item, index) => (
                 <div key={index} className="relative pl-8 md:pl-12 group">
-                  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-cyan-400 ring-4 ring-[#080B11] shadow-[0_0_10px_rgba(34,211,238,0.8)] group-hover:scale-125 transition-transform"></div>
+                  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-cyan-400 ring-4 ring-[#0a0a0a] shadow-[0_0_10px_rgba(34,211,238,0.8)] group-hover:scale-125 transition-transform"></div>
                   <div className="md:absolute md:-left-32 md:top-1 text-xs font-mono text-cyan-400 font-semibold mb-1 md:mb-0">
                     {item.period}
                   </div>
