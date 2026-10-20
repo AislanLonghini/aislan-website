@@ -203,25 +203,25 @@ export default function App() {
           name: "Fernando Arbache",
           title: "Professor e Consultor de Inovação no MIT",
           company: "MIT Professional Education",
-          text: "Recomendo Aislan para o programa de CTO do MIT[cite: 10]. Graduado com honras em Transformação Digital no MIT e integrante do Knowledge Hub (grupo seleto de 50 profissionais globais). Destaca-se por sua visão estratégica, paixão pela transformação digital e liderança exemplar em projetos financeiros complexos[cite: 10]."
+          text: "Recomendo Aislan para o programa de CTO do MIT. Graduado com honras em Transformação Digital no MIT e integrante do Knowledge Hub (grupo seleto de 50 profissionais globais). Destaca-se por sua visão estratégica, paixão pela transformação digital e liderança exemplar em projetos financeiros complexos."
         },
         {
           name: "Ana G Soares",
           title: "Professora e Mentora do LACP",
           company: "Lean Agile Coach Professional",
-          text: "As habilidades que mais te destacam são determinação com foco, proatividade e comunicação com carisma[cite: 10]. É o TOP 1 no nosso ranking catalogado de sucesso profissional[cite: 10]!"
+          text: "As habilidades que mais te destacam são determinação com foco, proatividade e comunicação com carisma. É o TOP 1 no nosso ranking catalogado de sucesso profissional!"
         },
         {
           name: "Ricardo Auad Galozzi",
           title: "Superintendente de Gestão Corporativa",
           company: "LPM / Banco ABC Brasil",
-          text: "Proatividade e envolvimento ímpares, além de fortes conhecimentos em agilidade e ótimo relacionamento interpessoal[cite: 7]. Identificou necessidade de capacitar o time de negócio e mobilizou os esforços necessários com enorme utilidade para a organização[cite: 7]."
+          text: "Proatividade e envolvimento ímpares, além de fortes conhecimentos em agilidade e ótimo relacionamento interpessoal. Identificou necessidade de capacitar o time de negócio e mobilizou os esforços necessários com enorme utilidade para a organização."
         },
         {
           name: "Roberta Larisse Borges",
           title: "Head de Agilidade",
           company: "Banco ABC Brasil",
-          text: "Capacidade de aprendizado e aplicação escalada[cite: 7]. Forte senso de time e companheirismo, criando ótimos ambientes de trabalho[cite: 7]. Ótimo comunicador[cite: 7]. A liderança está de fato em seu DNA[cite: 7]."
+          text: "Capacidade de aprendizado e aplicação escalada. Forte senso de time e companheirismo, criando ótimos ambientes de trabalho. Ótimo comunicador. A liderança está de fato em seu DNA."
         }
       ]
     },
@@ -233,43 +233,43 @@ export default function App() {
           name: "Bruno Domingos Medeiros",
           title: "Gerente de Governança de T.I",
           company: "Banco ABC Brasil",
-          text: "O feedback que chega do C-Level é que você é muito focado em resultados, não deixa assuntos pendentes e tenta sempre envolver as pessoas para a obtenção do melhor desfecho possível[cite: 7]."
+          text: "O feedback que chega do C-Level é que você é muito focado em resultados, não deixa assuntos pendentes e tenta sempre envolver as pessoas para a obtenção do melhor desfecho possível."
         },
         {
           name: "Camila Siebra dos Santos",
           title: "Gerente de Gestão Corporativa LPM",
           company: "Banco ABC Brasil",
-          text: "Profissional extremamente comprometido com suas tarefas e entregáveis, engajado em atingir sempre o melhor resultado[cite: 8]. Tem habilidade para questionar de forma coerente processos e decisões, propondo novas maneiras de fazer, pensar e inovar[cite: 8]."
+          text: "Profissional extremamente comprometido com suas tarefas e entregáveis, engajado em atingir sempre o melhor resultado. Tem habilidade para questionar de forma coerente processos e decisões, propondo novas maneiras de fazer, pensar e inovar."
         },
         {
           name: "Marcelo Nobrega",
           title: "Gerente de Passivos e Tesouro Direto",
           company: "Banco ABC Brasil",
-          text: "Implantamos Sistemas para Distribuição de Fundos com muita eficácia[cite: 8]. O Espírito de equipe e Pertencimento é algo bastante forte e presente nesse profissional[cite: 8]! Sempre pronto para auxiliar as áreas envolvidas nos projetos inclusive os Vendors."
+          text: "Implantamos Sistemas para Distribuição de Fundos com muita eficácia. O Espírito de equipe e Pertencimento é algo bastante forte e presente nesse profissional! Sempre pronto para auxiliar as áreas envolvidas nos projetos inclusive os Vendors."
         },
         {
           name: "Camila Ribeiro",
           title: "Governança de T.I & VMO",
           company: "Banco ABC Brasil",
-          text: "Em uma visão geral do nosso dia a dia vejo o quanto você é dedicado e determinado[cite: 8]. Está sempre estudando, buscando evoluir e dar o seu melhor[cite: 8]. Se posiciona com maestria, independente do desafio[cite: 8]."
+          text: "Em uma visão geral do nosso dia a dia vejo o quanto você é dedicado e determinado. Está sempre estudando, buscando evoluir e dar o seu melhor. Se posiciona com maestria, independente do desafio."
         },
         {
           name: "Roselaine Guimaraes Galdino",
           title: "Release Train Engineer (RTE)",
           company: "Ex-Banco ABC Brasil / Atual Bradesco",
-          text: "Profissional altamente colaborativo, que tem em seu perfil o hábito de contribuir de forma totalmente voluntária[cite: 9]. Constrói bons controles de eficiência de times para tomadas de decisão baseadas em dados[cite: 9]."
+          text: "Profissional altamente colaborativo, que tem em seu perfil o hábito de contribuir de forma totalmente voluntária. Constrói bons controles de eficiência de times para tomadas de decisão baseadas em dados."
         },
         {
           name: "Tatiane Vilas Boas",
           title: "Gerente de Controle de Derivativos",
           company: "Banco ABC Brasil",
-          text: "Sempre que o rumo de reuniões complexas com fornecedores começa a se perder, você consegue pausar as discussões com respeito e trazer todos para o foco principal e focado em resultado[cite: 10]."
+          text: "Sempre que o rumo de reuniões complexas com fornecedores começa a se perder, você consegue pausar as discussões com respeito e trazer todos para o foco principal e focado em resultado."
         },
         {
           name: "Gustavo Marrero",
           title: "Gestão OPEX - Governança de TI",
           company: "Ex-Banco ABC Brasil / Atual Shopee",
-          text: "Bastante seguro de si, exterioriza com precisão o que cada pessoa deve fazer para se atingir suas metas[cite: 9]. Demonstra ser um profissional totalmente qualificado, com nível de senioridade bastante elevado[cite: 9]."
+          text: "Bastante seguro de si, exterioriza com precisão o que cada pessoa deve fazer para se atingir suas metas. Demonstra ser um profissional totalmente qualificado, com nível de senioridade bastante elevado."
         }
       ]
     },
@@ -281,83 +281,83 @@ export default function App() {
           name: "Fabiano Lanzillotta",
           title: "Arquiteto Salesforce CRM",
           company: "Salesforce",
-          text: "Aislan é um líder nato[cite: 7]. Soube administrar conflitos internos e lidar com a cobrança do C-Level sem transpor a pressão aos desenvolvedores, motivando todos a atender os prazos com harmonia[cite: 7]."
+          text: "Aislan é um líder nato. Soube administrar conflitos internos e lidar com a cobrança do C-Level sem transpor a pressão aos desenvolvedores, motivando todos a atender os prazos com harmonia."
         },
         {
           name: "Rafael Furlan",
           title: "Gerente de T.I Core Banking",
           company: "Banco ABC Brasil",
-          text: "Destaca-se pela persuasão, negociação e pragmatismo[cite: 7]. Atua perfeitamente como um 'mediador estratégico' que promove fluidez e minimiza atritos nos processos[cite: 7]."
+          text: "Destaca-se pela persuasão, negociação e pragmatismo. Atua perfeitamente como um 'mediador estratégico' que promove fluidez e minimiza atritos nos processos."
         },
         {
           name: "Santhiago Merks",
           title: "Coordenador de Risco de Crédito",
           company: "Banco ABC Brasil",
-          text: "Sempre disponível, atua com honestidade e transparência[cite: 7]. Consegue ser claro e objetivo na comunicação, sempre buscando conciliação e foco na resolução dos problemas[cite: 7]."
+          text: "Sempre disponível, atua com honestidade e transparência. Consegue ser claro e objetivo na comunicação, sempre buscando conciliação e foco na resolução dos problemas."
         },
         {
           name: "Luiz Antonio Mendes de Gois Junior",
           title: "Coordenador de Segurança da Informação",
           company: "Banco ABC Brasil",
-          text: "Senso de urgência impecável em demandas complexas[cite: 7]. No projeto de gestão de identidades, entrou em cenário super desgastado e rapidamente afastou a crise com o fornecedor[cite: 7]."
+          text: "Senso de urgência impecável em demandas complexas. No projeto de gestão de identidades, entrou em cenário super desgastado e rapidamente afastou a crise com o fornecedor."
         },
         {
           name: "Devilim Peterson",
           title: "Tech Lead Core Banking",
           company: "Ex-ABC Brasil / Atual ASA Banking",
-          text: "Conseguiu de forma sucinta e objetiva orientar correções sutis nos processos de agilidade, fazendo o time aderir rapidamente[cite: 8]. Demonstra forte espírito de liderança e organização impecável[cite: 8]."
+          text: "Conseguiu de forma sucinta e objetiva orientar correções sutis nos processos de agilidade, fazendo o time aderir rapidamente. Demonstra forte espírito de liderança e organização impecável."
         },
         {
           name: "Eduardo Xavier",
           title: "Tech Lead Core Banking",
           company: "Banco ABC Brasil",
-          text: "Organização nas pautas e cumprimento de entregas[cite: 8]. Excelente gestão de conflitos, conseguindo mapear e adequar prioridades quando uma tarefa afeta múltiplas áreas[cite: 8]."
+          text: "Organização nas pautas e cumprimento de entregas. Excelente gestão de conflitos, conseguindo mapear e adequar prioridades quando uma tarefa afeta múltiplas áreas."
         },
         {
           name: "Pamela Coelho do Nascimento",
           title: "Analista Sr. de Projetos e Sistemas",
           company: "Banco ABC Brasil",
-          text: "Mediador e pacificador excepcional[cite: 9]. Durante uma maratona de 13h de war room do SBS V5, manteve-se calmo, centrado e instaurou um clima leve focado na solução[cite: 9]."
+          text: "Mediador e pacificador excepcional. Durante uma maratona de 13h de war room do SBS V5, manteve-se calmo, centrado e instaurou um clima leve focado na solução."
         },
         {
           name: "Rodrigo Croci",
           title: "Tech Lead Core Banking",
           company: "Banco ABC Brasil",
-          text: "Um profissional muito responsável, facilitador dedicado e prestativo, sabe conduzir os projetos com maestria e manter o time engajado do início ao fim[cite: 9]."
+          text: "Um profissional muito responsável, facilitador dedicado e prestativo, sabe conduzir os projetos com maestria e manter o time engajado do início ao fim."
         },
         {
           name: "Lucas dal Rovere",
           title: "Governança de T.I",
           company: "Ex-Banco ABC Brasil / Atual Bradesco",
-          text: "Destaco sua notável empatia e clareza na comunicação com stakeholders[cite: 9]. Sua resiliência e determinação diante de desafios têm sido verdadeiramente inspiradoras[cite: 9]."
+          text: "Destaco sua notável empatia e clareza na comunicação com stakeholders. Sua resiliência e determinação diante de desafios têm sido verdadeiramente inspiradoras."
         }
       ]
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[#080B11] text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 relative overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-[#fafafa] font-sans selection:bg-cyan-500 selection:text-cyan-950 relative overflow-hidden">
       {/* Dynamic Background Gradients inspirado no Hover.dev / The Startup */}
       <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-cyan-500/15 via-blue-600/10 to-transparent rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute top-1/2 left-[-10%] w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[150px] pointer-events-none"></div>
       <div className="absolute bottom-[-10%] right-[-10%] w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[160px] pointer-events-none"></div>
 
       {/* Header Estilo Hover.dev / The Startup */}
-      <header className="sticky top-0 z-50 bg-[#080B11]/80 backdrop-blur-md border-b border-white/10 shadow-2xl">
+      <header className="sticky top-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-md border-b border-white/10 shadow-2xl">
         <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center space-x-3 cursor-pointer group" onClick={() => setActiveTab('sobre')}>
             <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
-              <div className="w-full h-full bg-[#080B11] rounded-[11px] flex items-center justify-center font-extrabold text-cyan-400 text-xs tracking-wider">
+              <div className="w-full h-full bg-[#0a0a0a] rounded-[11px] flex items-center justify-center font-extrabold text-cyan-400 text-xs tracking-wider">
                 AL
               </div>
             </div>
             <div>
               <span className="font-bold text-sm tracking-tight block text-white group-hover:text-cyan-400 transition-colors">Aislan Longhini</span>
-              <span className="text-[10px] text-slate-400 font-mono uppercase tracking-widest">IT Executive</span>
+              <span className="text-xs text-slate-400 font-mono uppercase tracking-widest">IT Executive</span>
             </div>
           </div>
 
-          <nav className="flex items-center space-x-1 sm:space-x-1.5 text-xs font-semibold">
+          <nav role="tablist" aria-label="Seções do portfólio" className="flex items-center space-x-1 sm:space-x-1.5 text-xs font-semibold">
             {[
               { id: 'sobre', label: 'Sobre' },
               { id: 'competencias', label: 'Competências' },
@@ -365,11 +365,37 @@ export default function App() {
               { id: 'certificacoes', label: 'Certificações' },
               { id: 'recomendacoes', label: 'Recomendações' },
               { id: 'contato', label: 'Contato' }
-            ].map((tab) => (
+            ].map((tab, idx, allTabs) => (
               <button 
                 key={tab.id}
+                id={`tab-${tab.id}`}
+                role="tab"
+                aria-selected={activeTab === tab.id}
+                aria-controls={`panel-${tab.id}`}
+                tabIndex={activeTab === tab.id ? 0 : -1}
+                onKeyDown={(e) => {
+                  let targetIdx = idx;
+                  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    targetIdx = (idx + 1) % allTabs.length;
+                  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    targetIdx = (idx - 1 + allTabs.length) % allTabs.length;
+                  } else if (e.key === 'Home') {
+                    e.preventDefault();
+                    targetIdx = 0;
+                  } else if (e.key === 'End') {
+                    e.preventDefault();
+                    targetIdx = allTabs.length - 1;
+                  } else {
+                    return;
+                  }
+                  setActiveTab(allTabs[targetIdx].id);
+                  const nextTab = document.getElementById(`tab-${allTabs[targetIdx].id}`);
+                  if (nextTab) nextTab.focus();
+                }}
                 onClick={() => setActiveTab(tab.id)} 
-                className={`px-3.5 py-2 rounded-xl transition-all duration-200 relative ${
+                className={`px-3.5 py-2 rounded-xl transition-all duration-200 relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] ${
                   activeTab === tab.id 
                     ? 'text-white bg-white/10 border border-white/20 shadow-md shadow-cyan-500/10' 
                     : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -390,18 +416,18 @@ export default function App() {
           </div>
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 leading-[1.15]">
             Conectando visão de negócios <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">à tecnologia e dados.</span>
+            <span className="text-cyan-400">à tecnologia e dados.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10 font-normal">
             Executivo de tecnologia com sólida experiência em liderança estratégica, expansão de mercado e transformação digital guiada por inovação e IA.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition-all shadow-xl shadow-cyan-500/20 flex items-center space-x-2 text-sm">
+            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] transition-all shadow-xl shadow-cyan-500/20 flex items-center space-x-2 text-sm">
               <LinkedinIcon />
               <span className="text-slate-950">Perfil LinkedIn</span>
             </a>
-            <button onClick={() => setActiveTab('contato')} className="px-8 py-4 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] hover:border-white/20 transition-all text-sm backdrop-blur-xl">
+            <button onClick={() => setActiveTab('contato')} className="px-8 py-4 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] hover:border-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a] transition-all text-sm backdrop-blur-xl">
               Falar Conosco
             </button>
           </div>
@@ -412,7 +438,7 @@ export default function App() {
       <main className="py-12 relative z-10">
         {/* ABA SOBRE */}
         {activeTab === 'sobre' && (
-          <div className="max-w-5xl mx-auto px-6 space-y-16">
+          <div id="panel-sobre" role="tabpanel" aria-labelledby="tab-sobre" tabIndex={0} className="max-w-5xl mx-auto px-6 space-y-16 focus-visible:outline-none">
             <div className="p-8 sm:p-12 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-xl shadow-2xl relative overflow-hidden hover:border-cyan-500/30 transition-all">
               <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white mb-6">Resumo Executivo</h2>
@@ -450,7 +476,7 @@ export default function App() {
 
         {/* ABA COMPETÊNCIAS */}
         {activeTab === 'competencias' && (
-          <div className="max-w-5xl mx-auto px-6">
+          <div id="panel-competencias" role="tabpanel" aria-labelledby="tab-competencias" tabIndex={0} className="max-w-5xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Competências & Expertise</h2>
               <p className="text-slate-400 text-sm">Domínios organizados para máxima clareza e impacto estratégico.</p>
@@ -476,7 +502,7 @@ export default function App() {
 
         {/* ABA TIMELINE */}
         {activeTab === 'timeline' && (
-          <div className="max-w-4xl mx-auto px-6">
+          <div id="panel-timeline" role="tabpanel" aria-labelledby="tab-timeline" tabIndex={0} className="max-w-4xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Linha do Tempo</h2>
               <p className="text-slate-400 text-sm">Transição fluida entre a liderança comercial e a gestão executiva de tecnologia.</p>
@@ -485,7 +511,7 @@ export default function App() {
             <div className="relative border-l border-white/10 ml-4 md:ml-32 space-y-12">
               {careerTimeline.map((item, index) => (
                 <div key={index} className="relative pl-8 md:pl-12 group">
-                  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-cyan-400 ring-4 ring-[#080B11] shadow-[0_0_10px_rgba(34,211,238,0.8)] group-hover:scale-125 transition-transform"></div>
+                  <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-cyan-400 ring-4 ring-[#0a0a0a] shadow-[0_0_10px_rgba(34,211,238,0.8)] group-hover:scale-125 transition-transform"></div>
                   <div className="md:absolute md:-left-32 md:top-1 text-xs font-mono text-cyan-400 font-semibold mb-1 md:mb-0">
                     {item.period}
                   </div>
@@ -502,7 +528,7 @@ export default function App() {
 
         {/* ABA CERTIFICAÇÕES */}
         {activeTab === 'certificacoes' && (
-          <div className="max-w-5xl mx-auto px-6">
+          <div id="panel-certificacoes" role="tabpanel" aria-labelledby="tab-certificacoes" tabIndex={0} className="max-w-5xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Certificações & Educação</h2>
               <p className="text-slate-400 text-sm">Credenciais obtidas nas principais instituições mundiais.</p>
@@ -531,7 +557,7 @@ export default function App() {
 
         {/* ABA RECOMENDAÇÕES */}
         {activeTab === 'recomendacoes' && (
-          <div className="max-w-6xl mx-auto px-6 space-y-16">
+          <div id="panel-recomendacoes" role="tabpanel" aria-labelledby="tab-recomendacoes" tabIndex={0} className="max-w-6xl mx-auto px-6 space-y-16 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Recomendações Profissionais</h2>
               <p className="text-slate-400 text-sm">Depoimentos corporativos rigorosamente estruturados por nível hierárquico.</p>
@@ -555,8 +581,8 @@ export default function App() {
                       </div>
                       <div className="border-t border-white/10 pt-4">
                         <h4 className="font-bold text-white text-sm group-hover:text-cyan-400 transition-colors">{rec.name}</h4>
-                        <p className="text-[11px] text-cyan-400 font-medium">{rec.title}</p>
-                        <p className="text-[10px] text-slate-500">{rec.company}</p>
+                        <p className="text-xs text-cyan-400 font-medium">{rec.title}</p>
+                        <p className="text-xs text-slate-400">{rec.company}</p>
                       </div>
                     </div>
                   ))}
@@ -568,7 +594,7 @@ export default function App() {
 
         {/* NOVA ABA DE CONTATO */}
         {activeTab === 'contato' && (
-          <div className="max-w-4xl mx-auto px-6">
+          <div id="panel-contato" role="tabpanel" aria-labelledby="tab-contato" tabIndex={0} className="max-w-4xl mx-auto px-6 focus-visible:outline-none">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-bold tracking-tight text-white mb-3">Canais de Contato Direto</h2>
               <p className="text-slate-400 text-sm">Entre em contato diretamente para parcerias, posições executivas ou consultoria estratégica.</p>
@@ -578,7 +604,7 @@ export default function App() {
               {/* E-mail Card */}
               <a 
                 href="mailto:aislanlonghini30@gmail.com" 
-                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-500/40 backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
+                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-cyan-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <MailIcon />
@@ -597,7 +623,7 @@ export default function App() {
                 href="https://wa.me/5511959251055" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-emerald-500/40 backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
+                className="p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-emerald-500/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] backdrop-blur-xl shadow-xl transition-all group flex flex-col justify-between">
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <WhatsappIcon />
@@ -623,11 +649,11 @@ export default function App() {
             Disponível para novos desafios executivos em Delivery Management, Inovação e Integração entre Negócios e Tecnologia.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 transition-all text-sm shadow-lg shadow-cyan-500/20 flex items-center space-x-2">
+            <a href="https://www.linkedin.com/in/aislan-longhini/" target="_blank" rel="noopener noreferrer" className="px-7 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all text-sm shadow-lg shadow-cyan-500/20 flex items-center space-x-2">
               <LinkedinIcon />
               <span className="text-slate-950">Perfil LinkedIn</span>
             </a>
-            <button onClick={() => setActiveTab('contato')} className="px-7 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] transition-all text-sm backdrop-blur-xl">
+            <button onClick={() => setActiveTab('contato')} className="px-7 py-3 rounded-xl bg-white/[0.05] border border-white/10 text-white font-semibold hover:bg-white/[0.1] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B11] transition-all text-sm backdrop-blur-xl">
               Ver Contatos
             </button>
           </div>
